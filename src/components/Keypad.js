@@ -1,9 +1,21 @@
-// Code Keypad Component Here
+import React from 'react'
 
 function Keypad (){
+    function handleInputText(event) {
+        console.log('Entering password...')
+    }
+    
     return (
-        <div></div>
+        <div>
+            <input onChange={handleInputText} 
+            placeholder='Password'
+            type='password'/>
+        </div>
     )
 }
 
 export default Keypad;
+
+// Create input element
+// Add onChange to input element (function?)
+// Console.log the input value from input element
